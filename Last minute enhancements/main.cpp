@@ -3,15 +3,11 @@ using namespace std;
 
 void solve() 
 {
-    int h[1000001] = {0};
     int n;
     cin >> n;
     vector<int> v(n);
-    // int m = INT_MIN;
     for(int i = 0; i < n; i++) {
         cin >> v[i];
-        h[v[i]]++;
-        // m = max(m, v[i]);
     }
 
     int counter = 1;
@@ -30,8 +26,6 @@ void solve()
 
     cout << endl;
     cout << counter << endl;
-
-
 }
 
 int main() 
